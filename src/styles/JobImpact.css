@@ -1,0 +1,262 @@
+.job-impact {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* 自定义滚动条样式 */
+.job-impact::-webkit-scrollbar {
+  width: 8px;
+}
+
+.job-impact::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 4px;
+}
+
+.job-impact::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+
+.job-impact::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.impact-header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.impact-header h3 {
+  font-size: 1.5em;
+  margin-bottom: 8px;
+  color: #fff;
+  background: linear-gradient(45deg, #4CAF50, #2196F3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.impact-description {
+  color: #bbb;
+  font-size: 0.95em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.impact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: auto;
+}
+
+.impact-main-stats {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.stat-value {
+  font-size: 2em;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-bottom: 8px;
+}
+
+.stat-value.risk-level {
+  font-size: 1.5em;
+}
+
+.stat-label {
+  color: #aaa;
+  font-size: 0.9em;
+}
+
+.impact-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  height: auto;
+  max-height: 250px !important;
+  overflow-y: auto !important;
+  padding-right: 8px;
+  width: 100%;
+}
+
+/* 自定义滚动条样式 */
+.impact-details::-webkit-scrollbar {
+  width: 8px !important;
+  display: block !important;
+}
+
+.impact-details::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-radius: 4px !important;
+}
+
+.impact-details::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3) !important;
+  border-radius: 4px !important;
+}
+
+.impact-section {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 100%;
+  box-sizing: border-box;
+  flex: 1;
+}
+
+.impact-section:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+.section-header h4 {
+  color: #fff;
+  font-size: 1.1em;
+  margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+.section-icon {
+  font-size: 1.3em;
+  opacity: 0.9;
+}
+
+.impact-section ul {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 10px 0;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.impact-section li {
+  margin: 16px 0;
+  padding-left: 0;
+  position: relative;
+  font-size: 0.85em;
+  transition: all 0.3s ease;
+  line-height: 1.4;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+/* 为英文版本的列表项设置稍小的字体 */
+[lang="en"] .impact-section li {
+  font-size: 0.9em;
+}
+
+/* 技术能力特定样式 */
+.impact-section.technical .section-header h4 {
+  background: linear-gradient(45deg, #2196F3, #00BCD4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 认知能力特定样式 */
+.impact-section.cognitive .section-header h4 {
+  background: linear-gradient(45deg, #9C27B0, #E91E63);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* 移除列表项前的图标 */
+.impact-section.technical li::before,
+.impact-section.cognitive li::before,
+.impact-section.social li::before,
+.impact-section.adaptability li::before {
+  content: none;
+}
+
+/* 为不同部分设置不同的强调色 */
+.impact-section.social li::before {
+  color: #4CAF50;
+}
+
+.impact-section.adaptability li::before {
+  color: #FF9800;
+}
+
+.impact-section:hover li {
+  color: #fff;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .impact-details {
+    grid-template-columns: 1fr;
+  }
+  
+  .impact-main-stats {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .stat-item {
+    padding: 10px 0;
+  }
+  
+  .impact-section {
+    min-height: 180px;
+    padding: 16px;
+  }
+  
+  .impact-section li {
+    margin: 6px 0;
+  }
+}
+
+.countdown-container {
+  margin: 20px 0;
+  text-align: center;
+}
+
+.countdown-label {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.9em;
+  margin-bottom: 8px;
+}
+
+.countdown {
+  font-size: 1.2em;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 12px 20px;
+  border-radius: 8px;
+  display: inline-block;
+} 

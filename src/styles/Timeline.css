@@ -1,0 +1,106 @@
+.timeline {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 24px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  height: 100%;
+}
+
+.timeline h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+  text-align: center;
+  background: linear-gradient(45deg, #4CAF50, #2196F3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.timeline-container {
+  position: relative;
+  max-height: 350px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.timeline-line {
+  position: absolute;
+  left: 15px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #4CAF50;
+  z-index: 1;
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.timeline-year {
+  color: #4CAF50;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.timeline-event {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.9em;
+  line-height: 1.4;
+}
+
+/* 自定义滚动条 */
+.timeline-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.timeline-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 3px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .timeline {
+    padding: 16px;
+  }
+  
+  .timeline-item {
+    padding-left: 30px;
+  }
+  
+  .timeline-content {
+    padding: 12px;
+  }
+} 
