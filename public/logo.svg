@@ -1,1 +1,25 @@
- 
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景圆形 -->
+  <circle cx="256" cy="256" r="256" fill="url(#gradient-bg)"/>
+  
+  <!-- AI芯片图案 -->
+  <path d="M156 156h200v200h-200z" stroke="white" stroke-width="12" stroke-opacity="0.9"/>
+  <path d="M196 196h120v120h-120z" stroke="white" stroke-width="8" stroke-opacity="0.7"/>
+  <line x1="256" y1="156" x2="256" y2="356" stroke="white" stroke-width="8" stroke-opacity="0.7"/>
+  <line x1="156" y1="256" x2="356" y2="256" stroke="white" stroke-width="8" stroke-opacity="0.7"/>
+  
+  <!-- 上升趋势线 -->
+  <path d="M176 296l60-80 60 40 60-100" stroke="url(#gradient-line)" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- 渐变定义 -->
+  <defs>
+    <linearGradient id="gradient-bg" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#1A237E"/>
+      <stop offset="100%" stop-color="#0D47A1"/>
+    </linearGradient>
+    <linearGradient id="gradient-line" x1="176" y1="296" x2="356" y2="156" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#4CAF50"/>
+      <stop offset="100%" stop-color="#2196F3"/>
+    </linearGradient>
+  </defs>
+</svg> 
