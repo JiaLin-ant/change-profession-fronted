@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://ai-career-impact.vercel.app/sitemap.xml 

@@ -1,6 +1,6 @@
 {
-  "short_name": "职业规划助手",
-  "name": "AI时代职业规划助手 - 探索人工智能对不同职业的影响",
+  "short_name": "AI Career Impact",
+  "name": "AI Career Impact Analyzer",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +21,6 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#121212"
+  "background_color": "#ffffff",
+  "scope": "https://covertsonline.com"
 } 
