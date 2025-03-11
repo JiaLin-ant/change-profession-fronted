@@ -16,10 +16,29 @@ const SearchBar: React.FC = () => {
     setShowResults(false);
   }, [language]);
 
+  // Either use the variables or remove them if not needed
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTerm(e.target.value);
+    setShowResults(e.target.value.length > 0);
+  };
+
+  const handleSelectJob = (job: any) => {
+    setSelectedJob(job);
+    setShowResults(false);
+  };
+
   // ... 其余代码保持不变
 
   return (
-    // ... 组件渲染代码
+    <div className="search-container">
+      <input 
+        type="text" 
+        value={searchTerm}
+        onChange={handleSearch}
+        placeholder={t('searchJobs')}
+      />
+      {/* ... 组件渲染代码 */}
+    </div>
   );
 };
 
